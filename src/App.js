@@ -1,11 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+//import {BrowserRouter, Switch, Route} from 'react-router-dom'
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from "react-router-dom";
+import Header from "./components/Header"
+import About from './components/About';
+import Projects from './components/Projects';
+import data from './components/yourdata'
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Landing from './components/Landing';
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
+      <>
+      <Landing name={data.landingPageName} paragraph = {data.landingPagePara} landingPageImage={data.landingPageImage}/>
+      <Header name={data.name} contactEmail = {data.contactEmail}/>
+      <About />
+      <Projects projects={data.projects} />
+      <Resume resumeURL = {data.resumeURL}/>
+      <Contact contactEmail = {data.contactEmail} socialLinks = {data.social}/>
+     
+      </>
+     
+      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,8 +44,17 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
+    
+    
+    
+    
+   
+
+   
+
+
   );
 }
 
