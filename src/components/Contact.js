@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaCodepen, FaRegArrowAltCircleUp } from "react-icons/fa";
 
 
 
 function Contact({contactEmail, contactPara, socialLinks}) {
     return (
-        <div className="contact_container">
+        <div className="contact_container" id="contact">
         <h1>Get in touch.</h1>
         <hr className="line"/>
         {/* <p>{contactPara}</p> */}
@@ -13,6 +13,13 @@ function Contact({contactEmail, contactPara, socialLinks}) {
         <a className="email_link" href={`mailto:${contactEmail}`}>
           {contactEmail}
         </a>
+         {/* animated up arrow */}
+         <div class="arrow bounce">
+          <a href="#header">
+            <FaRegArrowAltCircleUp></FaRegArrowAltCircleUp>
+            </a>
+        </div>
+      
         <div className="social_links">
           <ul>
             <li>

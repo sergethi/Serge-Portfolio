@@ -8,7 +8,7 @@ return (
   <div>
        
     {/* name={data.name} contactEmail={data.contactEmail} */}
-    <div className="about_container">
+    <div className="about_container" id="about">
       <h1>{data.aboutTitle}</h1>
       <hr className="line"/>
       <p>{data.aboutPara}</p>

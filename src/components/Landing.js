@@ -9,7 +9,7 @@ const Landing = ({name, paragraph, landingPageImage})=>{
    // Header = React.createRef();
 
     return(
-    <div>
+    <div className="land-flex" id="labding">
         <div className="home_container">
             <div className="home_head_wrapper">
             < h1 > Hello I 'm <br></br> <span>{name}</span></h1>
@@ -32,7 +32,7 @@ const Landing = ({name, paragraph, landingPageImage})=>{
             </a>
             
             
-            </div>
+        </div>
             {/* <div id="header">
                 <Header />
             </div> */}

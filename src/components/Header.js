@@ -32,14 +32,14 @@ const Header = ({name, contactEmail})=>{
 
     return(
       <div>
-      <div className="header_container">
-          <a className="header_container_name" href="/"><h1>{name}</h1></a>
+      <div className="header_container" id="header">
+          <a className="header_container_name" href="#labding"><h1>{name}</h1></a>
           <nav>
               <ul>
-                  <li><a href="/about">About</a></li>
-                  <li><a href="/project">Projects</a></li>
-                  <li><a href="/experiences">Experiences</a></li>
-                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#project">Projects</a></li>
+                  <li><a href="#project">Experiences</a></li>
+                  <li><a href="#contact">Contact</a></li>
                   {/* <li><a href={`mailto:${contactEmail}`}>contact</a></li> */}
               </ul>
           </nav>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Projects({projects}) {
     return (
-        <div className="work_container">
+        <div className="work_container" id="project">
              <h1>Projects</h1>
              <hr className="line"/>
             <div className="projects_container">
