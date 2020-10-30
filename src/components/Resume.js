@@ -21,7 +21,7 @@ function Resume({resumeURL}) {
             
             <Button variant="outlined" color="inherit" href={resumeURL}
             style={{color: 'wheat', textAlign: 'center'}}
-           
+            className='resume-part'
             >
                  <h1 >View Resume</h1>
                  
