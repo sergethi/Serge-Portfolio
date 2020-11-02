@@ -95,7 +95,7 @@ export default {
   
     // About Page
     aboutTitle: "About Me",
-    aboutPara:`I have an associate degree in Computer Programming and information Technology. During my academic year, I did an internship as a computer support in a non profit organization. After graduating, I attended two web development boot-camps with two different coding schools. The Knowledge House where I leaned basics web development concepts and FullStack Academy where I deepened my knowledge about coding and also learned to build full stack applications using web development tools.
+    aboutPara:`I have an associate degree in Computer Programming and information Technology. During my academic year, I did an internship as a computer support in a non profit organization. After graduating, I attended two web development boot-camps with two different coding schools. The Knowledge House where I learned basics web development concepts and FullStack Academy where I deepened my knowledge about coding and also learned to build full stack applications using web development tools.
     When I am not coding, I am working-out, playing Basket-ball or Djing.
     `,
     aboutCredentialSkills: `Express, Sequelize, React, Redux, React-Redux, Node.js, Git, PostgreSQL, React-Native, Jasmine, Mocha/Chai, CSS, SQL`,
