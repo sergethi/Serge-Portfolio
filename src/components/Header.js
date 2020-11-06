@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import {FaBars} from "react-icons/fa";
+import { CSSTransition } from "react-transition-group";
+
+
 //import {Link} from 'react-router-dom'
 
 // import { makeStyles } from '@material-ui/core/styles';
@@ -27,22 +31,64 @@ import React from 'react';
 //   }));
 
 const Header = ({name, contactEmail})=>{
+
+    const [isNavVisible, setNavVisibility] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
+
+  const handleMediaQueryChange = mediaQuery => {
+    if (mediaQuery.matches) {
+      setIsSmallScreen(true);
+    } else {
+      setIsSmallScreen(false);
+    }
+  };
+
+  const toggleNav = () => {
+    setNavVisibility(!isNavVisible);
+  };
    
-   //const classes = useStyles();
+
 
     return(
       <div>
       <div className="header_container" id="header">
           <a className="header_container_name" href="#labding"><h1>{name}</h1></a>
-          <nav>
+          <CSSTransition
+           in={!isSmallScreen || isNavVisible}
+           timeout={350}
+           classNames="NavAnimation"
+           unmountOnExit
+          >
+               <nav>
               <ul>
                   <li><a href="#about">About</a></li>
                   <li><a href="#project">Projects</a></li>
                   <li><a href="#project">Experiences</a></li>
                   <li><a href="#contact">Contact</a></li>
+                  {/* <li>
+                  
+
+                  </li> */}
                   {/* <li><a href={`mailto:${contactEmail}`}>contact</a></li> */}
               </ul>
+             
           </nav>
+
+          </CSSTransition>
+         
+          <a  className = "burger-icon" onClick = {toggleNav}>
+            <FaBars />
+          </a>
       </div>
   </div>
       //   <div className={classes.root}>
