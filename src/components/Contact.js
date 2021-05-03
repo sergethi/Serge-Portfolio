@@ -10,7 +10,7 @@ function Contact({contactEmail, contactPara, socialLinks}) {
         <hr className="line"/>
         {/* <p>{contactPara}</p> */}
         <br></br>
-        <a className="email_link" href={`mailto:${contactEmail}`}>
+        <a className="email_link" href={`mailto:${contactEmail}`} target="_blank">
           {contactEmail}
         </a>
          {/* animated up arrow */}
@@ -23,22 +23,22 @@ function Contact({contactEmail, contactPara, socialLinks}) {
         <div className="social_links">
           <ul>
             <li>
-              <a href={`mailto:${contactEmail}`}>
+              <a href={`mailto:${contactEmail}`} target="_blank">
                 <FaEnvelope></FaEnvelope>
               </a>
             </li>
             <li>
-              <a href={socialLinks[0].url}>
+              <a href={socialLinks[0].url} target="_blank">
                 <FaLinkedin></FaLinkedin>
               </a>
             </li>
             <li>
-              <a href={socialLinks[1].url}>
+              <a href={socialLinks[1].url} target="_blank">
                 <FaGithub></FaGithub>
               </a>
             </li>
             <li>
-              <a href={socialLinks[2].url}>
+              <a href={socialLinks[2].url} target="_blank">
                 <FaCodepen></FaCodepen>
               </a>
             </li>
