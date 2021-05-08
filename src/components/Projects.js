@@ -1,4 +1,6 @@
 import React from 'react'
+import {FaGithub} from "react-icons/fa";
+
 
 
 function Projects({projects, projects2}) {
@@ -18,6 +20,8 @@ function Projects({projects, projects2}) {
                     </div>
                     <div className="title">
                         {project.title}
+                        <a href={project.git} target="_blank"> <FaGithub></FaGithub></a> 
+                       
                     </div>
                 </div>
                 ))}
