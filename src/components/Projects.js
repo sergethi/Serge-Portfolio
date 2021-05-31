@@ -8,7 +8,7 @@ function Projects({projects, projects2}) {
         <div className="work_container" id="project">
              <h1>Projects</h1>
              <hr className="line"/>
-             <h2>Express | Postgresql | React | Redux</h2>
+             <h2>Express | Postgresql | React | Redux | WordPress</h2>
 
             <div className="projects_container">
                 {projects.map((project)=>(
@@ -27,7 +27,7 @@ function Projects({projects, projects2}) {
                 ))}
             </div>
 
-            <h2>WordPress</h2>
+            <h2>Written Tech Article</h2>
 
             <div className="projects_container">
                 {projects2.map((project)=>(

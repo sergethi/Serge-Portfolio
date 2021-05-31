@@ -269,13 +269,15 @@ a{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 1rem;
+  margin-right: 15px;
 }
 .work_container .projects_container img{
   height: 20rem;
   width: 20rem;
   margin-left: 25px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(233, 226, 226, 0.2), 0 6px 20px 0 rgba(201, 187, 187, 0.19);
 
- 
   
 }
 
