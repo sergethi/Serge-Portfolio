@@ -1,22 +1,27 @@
 import React, {useState} from 'react';
-import {FaBars} from 'react-icons/fa';
+import {FaBars } from 'react-icons/fa';
 
 
 
-export default function MobileNav() {
+export default function MobileNav(props) {
 
-    const [open, setOpen] = useState(false);
 
     return (
-        <div className="mob_header">
-            {/* <a className='burger-icon'><FaBars onClick={()=> setOpen(!open)}/> </a> */}
-            
+        <div className="mob_header">            
             
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#project">Experiences</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li onClick={()=>props.isMobile && props.closeMobilMenu()}>
+                    <a href="#about">About</a>
+                </li>
+                <li onClick={()=>props.isMobile && props.closeMobilMenu()}>
+                    <a href="#project">Projects</a>
+                </li>
+                <li onClick={()=>props.isMobile && props.closeMobilMenu()}>
+                    <a href="#project">Experiences</a>
+                </li>
+                <li onClick={()=>props.isMobile && props.closeMobilMenu()}>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
             
       </div>
