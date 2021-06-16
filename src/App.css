@@ -1070,34 +1070,50 @@ nav {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width:1040px){
+@media only screen and (min-width: 600px) and (max-width:1024px){
   body{
     font-size: 2px;
-    text-align: center;
+    text-align: center;    
 
+  }
+  .App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
 /* LANDING///HOME */
  .land-flex {
-   margin-top: 240px;
-   width: 87vw;
+   margin-top: 300px;
+   margin-right: 500px;
+   height: 100%;
  }
+ .home_container{
+  /* display: flex;
+  flex-direction: column;
+  justify-content:center;
+  position: relative;
+  top: 3rem; */
+  width: 90vw;
+  margin-bottom: 130px;
+}
   .home_container .home_head_wrapper{
-    top:1rem;
+    top:1.7rem;
     width: 60vw;
   }
   .home_container .home_head_wrapper h1{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
  
   .home_container .home_head_wrapper p{
-    top:0rem;
-    font-size: 1rem;
+    top:0.8rem;
+    font-size: 1.5rem;
   }
   .home_container .image_container img{
-    height: 13rem;
-    width: 10rem;
+    height: 20rem;
+    width: 20rem;
     top:1rem;
-    margin-right:150px;
+    margin-right:8px;
   }
 
   /* LANDING PAGE SCROLL ICONE*/
@@ -1166,15 +1182,15 @@ nav {
   /* Header */
 
 .header_container{ 
-  width: 80vw;
+  width: 100vw;
   top: 10rem;
 }
 .header_container h1{
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-left: 30px;
 }
 .header_container ul{
-  margin-right: 1px;
+  margin-right: 0px;
 }
 .header_container ul li{
   padding-right: 1rem;
@@ -1182,8 +1198,9 @@ nav {
 
 }
 .header_container ul li a{
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: bolder;
+  
 
   
 }
@@ -1194,23 +1211,24 @@ nav {
   /* background-color: #66669a42;;
   display: flex;
   flex-direction: column; */
-  width: 85vw;
+  width: 100vw;
   /* justify-content: center;
   position: relative; */
   top:10rem;
 }
 .about_container h1{
   /* text-align: center; */
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   /* font-family: 'Montserrat';
   margin-bottom: 0px; */
 }
 .about_container p{
   /* position: relative; */
   top:-2rem;
-  left: 90px;
-  font-size: 1.4rem;
-  width: 60vw;
+  left: 20px;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 95vw;
   /* opacity: 0.4; */
   /* text-align: justify; */
   /* word-spacing: normal;
@@ -1220,16 +1238,16 @@ nav {
 .about_container h3{
 
   /* position: relative; */
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 10px;
   
 }
 .about_container h5{
   /* position: relative; */
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 10px;
   /* opacity: 0.4; */
   margin-top: 5px;
   
@@ -1246,35 +1264,42 @@ nav {
 .work_container{
   /* background-color: #66669a42;; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     top: 18rem;
-    width: 85vw;
+    width: 100vw;
+    margin-bottom: 100px;
     /* justify-content: center; */
 }
 .work_container h1{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   /* font-family: 'Montserrat';
   text-align: center; */
   margin-bottom: 0px;
   margin-top: 10px;
 }
+.work_container h2{
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: 10px;
+
+}
 .work_container .projects_container{
   margin-top: 10px;
 
   display: grid;
-  grid-template-columns: repeat(1, 4fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0rem;
   
 }
 .work_container .projects_container img{
-  height: 8rem;
-  width: 10rem;
+  height: 18rem;
+  width: 18rem;
   margin-left: 0px;
   
 }
 .work_container .projects_container .title{
-  font-size: 0.6rem;
+  font-size: 1rem;
   /* color:  rgb(214, 137, 42); */
   margin-left: 5px;
   /* padding-bottom: 20px; */
@@ -1284,7 +1309,7 @@ nav {
 /* resume */
 
 .resume-part{
-  font-size: 0.2rem;
+  font-size: 0.6rem;
   margin-top: 300px;
   /* color: wheat;
   text-align: center; */
@@ -1316,10 +1341,10 @@ nav {
   opacity: 0.4;
 } */
 .contact_container .email_link{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   /* color: white;
   position: relative; */
-  margin-top: 8px;
+  margin-top: 10px;
   padding-bottom: 0px;
 }
 
@@ -1335,7 +1360,8 @@ nav {
 .contact_container li a{
   /* color: white; */
   /* text-decoration: none; */
-  font-size: 1.3rem;
+  font-size: 2rem;
+  margin-right: 50px;
   
 }
 
