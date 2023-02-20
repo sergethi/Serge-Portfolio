@@ -1,7 +1,7 @@
   
 import React from 'react';
-import { ScrollTo, ScrollArea } from "react-scroll-to";
-import Header from "./Header"
+// import { ScrollTo, ScrollArea } from "react-scroll-to";
+// import Header from "./Header"
 
 
 

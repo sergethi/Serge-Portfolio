@@ -260,6 +260,7 @@ a{
     top: 18rem;
     width: 80vw;
     justify-content: center;
+    padding: 10px;
 }
 .work_container h1{
   font-size: 4rem;

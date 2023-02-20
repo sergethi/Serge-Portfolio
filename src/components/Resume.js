@@ -16,7 +16,7 @@ import Button from '@material-ui/core/Button';
 function Resume({resumeURL}) {
     //const classes = useStyles();
     return (
-        <div className='resume-part' id="project">
+        <div className='resume-part' id="experience">
        
             
             <Button variant="outlined" color="inherit" href={resumeURL}

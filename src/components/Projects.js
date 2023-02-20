@@ -14,13 +14,13 @@ function Projects({projects, projects2}) {
                 {projects.map((project)=>(
                 <div key={project.id} className="project">
                     <div className="image">
-                        <a href={project.url} target="_blank">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
                             <img src={project.imageSrc} alt={project.title}></img>
                         </a>
                     </div>
                     <div className="title">
                         {project.title}
-                        <a href={project.git} target="_blank"> <FaGithub></FaGithub></a> 
+                        <a href={project.git} target="_blank" rel="noopener noreferrer"> <FaGithub></FaGithub></a> 
                        
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function Projects({projects, projects2}) {
                 {projects2.map((project)=>(
                 <div key={project.id} className="project">
                     <div className="image">
-                        <a href={project.url} target="_blank">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
                             <img src={project.imageSrc} alt={project.title}></img>
                         </a>
                     </div>

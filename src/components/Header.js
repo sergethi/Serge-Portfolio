@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {FaBars, FaRegTimesCircle} from "react-icons/fa";
-import { CSSTransition } from "react-transition-group";
+// import { CSSTransition } from "react-transition-group";
 import MobileNav from './MobileNav'
 
 
@@ -32,8 +32,8 @@ import MobileNav from './MobileNav'
 //   };
    
      const [open, setOpen] = useState(false);
-     const closeIcon = <a className='close-icon'><FaRegTimesCircle onClick={()=> setOpen(!open)}/> </a>
-     const openIcon = <a className='burger-icon'><FaBars onClick={()=> setOpen(!open)}/> </a>
+     const closeIcon = <div  className='close-icon'><FaRegTimesCircle onClick={()=> setOpen(!open)}/> </div>
+     const openIcon = <div className='burger-icon'><FaBars onClick={()=> setOpen(!open)}/> </div>
      const closeMobilMenu = () => setOpen(false)
     return(
       <div>
@@ -49,7 +49,7 @@ import MobileNav from './MobileNav'
                   <ul>
                       <li><a href="#about">About</a></li>
                       <li><a href="#project">Projects</a></li>
-                      <li><a href="#project">Experiences</a></li>
+                      <li><a href="#experience">Experiences</a></li>
                       <li><a href="#contact">Contact</a></li>
                 
                   </ul>
