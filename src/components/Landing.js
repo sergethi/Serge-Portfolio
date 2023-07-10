@@ -16,7 +16,7 @@ const Landing = ({name, paragraph, landingPageImage})=>{
             <p>{paragraph}</p>
             </div>
             <div className="image_container">
-                <img src={process.env.PUBLIC_URL + '/my-pic.jpg'} alt="Author"></img>
+                <img src={process.env.PUBLIC_URL + '/img-no-prop.jpg'} alt="Author"></img>
                 <div className="bg"></div>
             </div>
 
