@@ -848,12 +848,12 @@ nav {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    left: 0px;
+    left: 10px;
     margin-left: 0px;
     font-size: 1.5rem;
     background: rgb(214, 137, 42);
     border-top: 2px solid blue;
-    padding: 0px 15px 0px 0px;
+    /* padding: 0px 15px 0px 0px; */
     /* height: 50px; */
     width: 100%;
     text-align: center;
