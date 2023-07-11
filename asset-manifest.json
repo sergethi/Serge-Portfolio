@@ -1,13 +1,13 @@
 {
-  "main.css": "/Serge-Portfolio/static/css/main.5f26dddf.chunk.css",
-  "main.js": "/Serge-Portfolio/static/js/main.e9d5cdff.chunk.js",
-  "main.js.map": "/Serge-Portfolio/static/js/main.e9d5cdff.chunk.js.map",
-  "runtime~main.js": "/Serge-Portfolio/static/js/runtime~main.63b33ee8.js",
-  "runtime~main.js.map": "/Serge-Portfolio/static/js/runtime~main.63b33ee8.js.map",
-  "static/js/2.1ec97ce1.chunk.js": "/Serge-Portfolio/static/js/2.1ec97ce1.chunk.js",
-  "static/js/2.1ec97ce1.chunk.js.map": "/Serge-Portfolio/static/js/2.1ec97ce1.chunk.js.map",
-  "index.html": "/Serge-Portfolio/index.html",
-  "precache-manifest.c8e88ff20be1d48f0fcb9e7f7314199c.js": "/Serge-Portfolio/precache-manifest.c8e88ff20be1d48f0fcb9e7f7314199c.js",
-  "service-worker.js": "/Serge-Portfolio/service-worker.js",
-  "static/css/main.5f26dddf.chunk.css.map": "/Serge-Portfolio/static/css/main.5f26dddf.chunk.css.map"
+  "files": {
+    "main.css": "/Serge-Portfolio/static/css/main.80ba853c.css",
+    "main.js": "/Serge-Portfolio/static/js/main.4ab873ec.js",
+    "index.html": "/Serge-Portfolio/index.html",
+    "main.80ba853c.css.map": "/Serge-Portfolio/static/css/main.80ba853c.css.map",
+    "main.4ab873ec.js.map": "/Serge-Portfolio/static/js/main.4ab873ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80ba853c.css",
+    "static/js/main.4ab873ec.js"
+  ]
 }
