@@ -1,4 +1,5 @@
-export default {
+import img from "../images/fashion-3080644_1920.jpg"
+export default  {
   //(Please Do Not Remove The comma(,) after every variable)
 
   //Change The Website Template
@@ -63,8 +64,7 @@ export default {
     {
       id: 5, //DO NOT CHANGE THIS (Please)😅
       title: "Golden-Face Salon",
-      imageSrc:
-        "https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644__340.jpg",
+      imageSrc:`${img}`,
       url: "https://golden-face-salon.netlify.app/",
       git: "https://github.com/sergethi/Beauty-salon-Golden-Face",
       isLive: true,
