@@ -808,9 +808,9 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .header_container h1 {
-    font-size: 2rem;
-    margin-left: 20px;
+  .header_container_name img {
+    width: 60px;
+    height: 60px;
   }
   /* .header_container ul{
   display: flex;
@@ -919,7 +919,7 @@ nav {
   }
   .about_container p {
     /* position: relative; */
-    top: -2rem;
+    /* top: -2rem; */
     left: 0px;
     font-size: 1rem;
     width: 100%;
@@ -1171,9 +1171,9 @@ nav {
     width: 100vw;
     top: 10rem;
   }
-  .header_container h1 {
-    font-size: 1.5rem;
-    margin-left: 30px;
+  .header_container_name img {
+    width: 60px;
+    height: 60px;
   }
   .header_container ul {
     margin-right: 0px;
@@ -1205,7 +1205,7 @@ nav {
   }
   .about_container-p {
     /* position: relative; */
-    top: -2rem;
+    /* top: -2rem; */
     left: 20px;
     font-size: 1.5rem;
     text-align: left;
