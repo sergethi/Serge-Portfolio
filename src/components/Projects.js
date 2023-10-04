@@ -4,6 +4,8 @@ import {FaGithub} from "react-icons/fa";
 
 
 function Projects({projects, projects2}) {
+    // Sort the projects to display the live ones first
+    projects.sort((a, b) => b.isLive - a.isLive);
     return (
         <div className="work_container" id="project">
              <h1>Projects</h1>

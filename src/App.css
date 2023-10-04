@@ -69,13 +69,11 @@ a {
   position: relative;
   margin-top: 50px;
 }
-.header_container h1 {
-  position: relative;
-  margin-left: 180px;
-  font-size: 2rem;
-  background-color: rgb(214, 137, 42);
-  color: #1e6fd9;
-  border: whitesmoke solid;
+
+.header_container_name img {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
 }
 .header_container ul {
   list-style: none;
@@ -370,14 +368,16 @@ a {
 }
 .about_container p {
   position: relative;
-  top: -2rem;
+  /* top: -2rem; */
   left: 150px;
   font-size: 1.4rem;
   width: 60vw;
   opacity: 0.4;
   text-align: justify;
   word-spacing: normal;
-  margin-top: 50px;
+  margin-top: 8px;
+  padding: 0;
+  /* margin: 0; */
   /* justify-content: left; */
 }
 .about_container h3 {

@@ -4,7 +4,7 @@ import {FaBars, FaRegTimesCircle} from "react-icons/fa";
 import MobileNav from './MobileNav'
 
 
- const Header = ({name, contactEmail})=>{
+ const Header = ({data, contactEmail})=>{
 
 //     const [isNavVisible, setNavVisibility] = useState(false);
 //   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -38,7 +38,7 @@ import MobileNav from './MobileNav'
     return(
       <div>
       <div className="header_container" id="header">
-          <a className="header_container_name" href="#labding"><h1>{name}</h1></a>
+          <a className="header_container_name" href="#labding"><img src={data.logo} alt="logo"/></a>
           {/* <CSSTransition
            in={!isSmallScreen || isNavVisible}
            timeout={350}

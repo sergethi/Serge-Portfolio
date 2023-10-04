@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <>
       <Landing name={data.landingPageName} paragraph = {data.landingPagePara} landingPageImage={data.landingPageImage}/>
-      <Header name={data.name} contactEmail = {data.contactEmail}/>
+      <Header data={data} contactEmail = {data.contactEmail}/>
       <About />
       <Projects projects={data.projects} projects2={data.projects2} />
       <Resume resumeURL = {data.resumeURL}/>

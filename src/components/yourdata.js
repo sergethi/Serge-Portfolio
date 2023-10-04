@@ -1,9 +1,12 @@
-import img from "../images/fashion-3080644_1920.jpg"
+import img from "../images/fashion-3080644_1920.jpg";
+import restaurantFood from "../images/restauranfood.jpg"
+import Mylogo from "../images/Serge.png"
 export default  {
   //(Please Do Not Remove The comma(,) after every variable)
 
   //Change The Website Template
   name: "SAN",
+  logo: `${Mylogo}`,
 
   //Contact Email
   contactEmail: "sergethiti@gmail.com",
@@ -53,6 +56,16 @@ export default  {
     },
     {
       id: 4, //DO NOT CHANGE THIS (Please)😅
+      title: "Little Lemon Restaurant", //Project Title - Add Your Project Title Here
+      // Image Size Should be (300X300 px)
+      imageSrc: `${restaurantFood}`,
+      //Project URL - Add Your Project Url Here
+      url: "https://little-lemon-restaurant-serge.netlify.app/",
+      git: "https://github.com/sergethi/Little-Lemon-restaurant.git",
+      isLive: true,
+    },
+    {
+      id: 5, //DO NOT CHANGE THIS (Please)😅
       title: "The Artists Forum", //Project Title - Add Your Project Title Here
       // Image Size Should be (300X300 px)
       imageSrc:
@@ -62,7 +75,7 @@ export default  {
       isLive: true,
     },
     {
-      id: 5, //DO NOT CHANGE THIS (Please)😅
+      id: 6, //DO NOT CHANGE THIS (Please)😅
       title: "Golden-Face Salon",
       imageSrc:`${img}`,
       url: "https://golden-face-salon.netlify.app/",
@@ -107,7 +120,7 @@ export default  {
   //Resume
 
   resumeURL:
-    "https://drive.google.com/file/d/1O_X1EkzSWLMaeqZrwgv1EtovQnvS5yq_/view",
+    "https://drive.google.com/file/d/1McWhkqSGBOt90mbfIish0MOYIRBID50M/view?usp=sharing",
 
   // Contact Section
   contactPara:
@@ -131,10 +144,8 @@ export default  {
   // About Page
   aboutTitle: "About Me",
   aboutPara: [
-     `I'm a passionate software engineer with a non-traditional technology background. I've honed my skills through immersive experiences such as web development boot camps and workforce programs, supplemented by completing a comprehensive software engineering program.
-        Proficient in JavaScript, Python, HTML, CSS, and more, I find joy in crafting user-friendly web applications and managing WordPress sites. My time as a Software Engineer Apprentice at Google has enhanced my collaboration, problem-solving, and communication skills.`,
-       `With a meticulous and detail-oriented approach, I strive to optimize website performance, implement SEO best practices, and translate intricate designs into flawless HTML/CSS templates. As a volunteer Web Developer at The Artists Forum, I actively contribute to community initiatives.
-        Driven by a passion for making a meaningful impact in the technology field, I eagerly embrace new challenges and enthusiastically contribute to impactful projects.`
+     `I began my journey with a background in electrical engineering before pivoting into the realm of software engineering. Taking a distinctive route into the tech sector, my proficiency has been sculpted by intensive web development bootcamps, professional workforce programs, and a rigorous software engineering apprenticeship with Google.`,
+       `Outside of crafting applications, I delve into new technologies, ever eager to learn. Basketball fuels my active side, while my fitness regime keeps me in top shape. Additionally, the art of DJing captivates me, and I continuously refine my skills in it.`
   ]
        
     ,
