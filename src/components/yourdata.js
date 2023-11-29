@@ -1,7 +1,7 @@
 import img from "../images/fashion-3080644_1920.jpg";
-import restaurantFood from "../images/restauranfood.jpg"
-import Mylogo from "../images/Serge.png"
-export default  {
+import restaurantFood from "../images/restauranfood.jpg";
+import Mylogo from "../images/Serge.png";
+export default {
   //(Please Do Not Remove The comma(,) after every variable)
 
   //Change The Website Template
@@ -77,7 +77,7 @@ export default  {
     {
       id: 6, //DO NOT CHANGE THIS (Please)😅
       title: "Golden-Face Salon",
-      imageSrc:`${img}`,
+      imageSrc: `${img}`,
       url: "https://golden-face-salon.netlify.app/",
       git: "https://github.com/sergethi/Beauty-salon-Golden-Face",
       isLive: true,
@@ -116,6 +116,16 @@ export default  {
       //Project URL - Add Your Project Url Here
       url: "https://medium.com/@sergethiti",
     },
+    {
+      id: 2, //DO NOT CHANGE THIS (Please)😅
+      title:
+        "Deploying a Full-Stack App on Railway and Netlify: A Step-by-Step Guide", //Project Title - Add Your Project Title Here
+      // Image Size Should be (300X300 px)
+      imageSrc:
+        "https://cdn-images-1.medium.com/v2/resize:fit:800/1*ChvyjXBLDwXsRleYFTBBeQ.png",
+      //Project URL - Add Your Project Url Here
+      url: "https://medium.com/@sergethiti/deploying-a-full-stack-app-on-railway-and-netlify-a-step-by-step-guide-6786105707ab",
+    },
   ],
   //Resume
 
@@ -144,11 +154,10 @@ export default  {
   // About Page
   aboutTitle: "About Me",
   aboutPara: [
-     `I began my journey with a background in electrical engineering before pivoting into the realm of software engineering. Taking a distinctive route into the tech sector, my proficiency has been sculpted by intensive web development bootcamps, professional workforce programs, and a rigorous software engineering apprenticeship with Google.`,
-       `Outside of crafting applications, I delve into new technologies, ever eager to learn. Basketball fuels my active side, while my fitness regime keeps me in top shape. Additionally, the art of DJing captivates me, and I continuously refine my skills in it.`
-  ]
-       
-    ,
+    `I began my journey with a background in electrical engineering before pivoting into the realm of software engineering. Taking a distinctive route into the tech sector, my proficiency has been sculpted by intensive web development bootcamps, professional workforce programs, and a rigorous software engineering apprenticeship with Google.`,
+    `Outside of crafting applications, I delve into new technologies, ever eager to learn. Basketball fuels my active side, while my fitness regime keeps me in top shape. Additionally, the art of DJing captivates me, and I continuously refine my skills in it.`,
+  ],
+
   aboutCredentialSkills: `Express, Sequelize, React, Redux, React-Redux, Angular, Node.js, Git, PostgreSQL, MongoDB, WordPress, Jasmine, Mocha/Chai, CSS, Jest.`,
   aboutCredentialLanguages: `HTML, CSS, Javascript (ES5 & ES6), Python, Java.`,
 };
