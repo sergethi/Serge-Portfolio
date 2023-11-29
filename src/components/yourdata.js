@@ -39,10 +39,10 @@ export default  {
       title: "Serge-Party-Event-Rentals",
       imageSrc:
         "https://oaklawnpartyrentals.com/wp-content/uploads/2019/02/dance-floor.jpg",
-      url: "https://serge-party-event-rentals.herokuapp.com/",
+      url: "https://sergepartyrentals.netlify.app/",
       //Project Github
-      git: "https://github.com/sergethi/Serge-rent-party-wedding",
-      isLive: false,
+      git: "https://github.com/orgs/Serge-Rental/repositories",
+      isLive: true,
     },
     {
       id: 3, //DO NOT CHANGE THIS (Please)😅
