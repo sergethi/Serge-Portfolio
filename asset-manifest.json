@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Serge-Portfolio/static/css/main.ba2a856f.css",
-    "main.js": "/Serge-Portfolio/static/js/main.c99de3ba.js",
+    "main.css": "/Serge-Portfolio/static/css/main.130e2083.css",
+    "main.js": "/Serge-Portfolio/static/js/main.5717d7bc.js",
     "static/media/restauranfood.jpg": "/Serge-Portfolio/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/Serge.png": "/Serge-Portfolio/static/media/Serge.00e3c33709e2b26798bf.png",
     "static/media/fashion-3080644_1920.jpg": "/Serge-Portfolio/static/media/fashion-3080644_1920.d84bf462ec1dcf478f03.jpg",
     "index.html": "/Serge-Portfolio/index.html",
-    "main.ba2a856f.css.map": "/Serge-Portfolio/static/css/main.ba2a856f.css.map",
-    "main.c99de3ba.js.map": "/Serge-Portfolio/static/js/main.c99de3ba.js.map"
+    "main.130e2083.css.map": "/Serge-Portfolio/static/css/main.130e2083.css.map",
+    "main.5717d7bc.js.map": "/Serge-Portfolio/static/js/main.5717d7bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba2a856f.css",
-    "static/js/main.c99de3ba.js"
+    "static/css/main.130e2083.css",
+    "static/js/main.5717d7bc.js"
   ]
 }
