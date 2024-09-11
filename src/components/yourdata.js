@@ -130,7 +130,7 @@ export default {
   //Resume
 
   resumeURL:
-    "https://drive.google.com/file/d/1McWhkqSGBOt90mbfIish0MOYIRBID50M/view?usp=sharing",
+    "https://drive.google.com/file/d/10uHLCU2-Cn-77uT3tqzfCFpe764uNQAX/view?usp=sharing",
 
   // Contact Section
   contactPara:
