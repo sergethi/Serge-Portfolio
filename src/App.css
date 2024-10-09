@@ -277,6 +277,10 @@ a {
   box-shadow: 0 4px 8px 0 rgba(233, 226, 226, 0.2),
     0 6px 20px 0 rgba(201, 187, 187, 0.19);
 }
+.proj-img-flex{
+  display: flex;
+  flex-direction: column;
+}
 .is-live {
   margin-left: 25px;
 }

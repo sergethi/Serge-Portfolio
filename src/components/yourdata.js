@@ -1,4 +1,4 @@
-import img from "../images/fashion-3080644_1920.jpg";
+import img from "../images/hero-jessica-felicio-unsplash.jpg";
 import restaurantFood from "../images/restauranfood.jpg";
 import Mylogo from "../images/Serge.png";
 export default {
@@ -76,10 +76,10 @@ export default {
     },
     {
       id: 6, //DO NOT CHANGE THIS (Please)😅
-      title: "Golden-Face Salon",
+      title: "Beauty Studio",
       imageSrc: `${img}`,
-      url: "https://golden-face-salon.netlify.app/",
-      git: "https://github.com/sergethi/Beauty-salon-Golden-Face",
+      url: "https://jess-beauty-studio.vercel.app",
+      git: "https://github.com/sergethi/beauty-studio",
       isLive: true,
     },
     // {
