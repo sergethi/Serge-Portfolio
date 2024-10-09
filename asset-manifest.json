@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Serge-Portfolio/static/css/main.130e2083.css",
-    "main.js": "/Serge-Portfolio/static/js/main.eee385b8.js",
+    "main.css": "/Serge-Portfolio/static/css/main.bb1afd9a.css",
+    "main.js": "/Serge-Portfolio/static/js/main.b0e3c99c.js",
     "static/media/restauranfood.jpg": "/Serge-Portfolio/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/hero-jessica-felicio-unsplash.jpg": "/Serge-Portfolio/static/media/hero-jessica-felicio-unsplash.98577f48c0d6c31d24db.jpg",
     "static/media/Serge.png": "/Serge-Portfolio/static/media/Serge.00e3c33709e2b26798bf.png",
-    "static/media/fashion-3080644_1920.jpg": "/Serge-Portfolio/static/media/fashion-3080644_1920.d84bf462ec1dcf478f03.jpg",
     "index.html": "/Serge-Portfolio/index.html",
-    "main.130e2083.css.map": "/Serge-Portfolio/static/css/main.130e2083.css.map",
-    "main.eee385b8.js.map": "/Serge-Portfolio/static/js/main.eee385b8.js.map"
+    "main.bb1afd9a.css.map": "/Serge-Portfolio/static/css/main.bb1afd9a.css.map",
+    "main.b0e3c99c.js.map": "/Serge-Portfolio/static/js/main.b0e3c99c.js.map"
   },
   "entrypoints": [
-    "static/css/main.130e2083.css",
-    "static/js/main.eee385b8.js"
+    "static/css/main.bb1afd9a.css",
+    "static/js/main.b0e3c99c.js"
   ]
 }
