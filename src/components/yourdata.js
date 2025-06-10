@@ -130,7 +130,7 @@ export default {
   //Resume
 
   resumeURL:
-    "https://drive.google.com/file/d/10uHLCU2-Cn-77uT3tqzfCFpe764uNQAX/view?usp=sharing",
+    "https://drive.google.com/file/d/1IVo6o548DpnUs6wR1SXzn7HOGg3og1Oq/view?usp=sharing",
 
   // Contact Section
   contactPara:
@@ -154,10 +154,10 @@ export default {
   // About Page
   aboutTitle: "About Me",
   aboutPara: [
-    `I began my journey with a background in electrical engineering before pivoting into the realm of software engineering. Taking a distinctive route into the tech sector, my proficiency has been sculpted by intensive web development bootcamps, professional workforce programs, and a rigorous software engineering apprenticeship with Google.`,
-    `Outside of crafting applications, I delve into new technologies, ever eager to learn. Basketball fuels my active side, while my fitness regime keeps me in top shape. Additionally, the art of DJing captivates me, and I continuously refine my skills in it.`,
+    `I began my journey with a foundation in electrical engineering, computer programming, and information technology, which eventually led me to pivot into software engineering. Taking a nontraditional path into tech, I honed my skills through immersive web development bootcamps, workforce development programs, and rigorous software engineering apprenticeships at Google and Microsoft.`,
+    `Beyond building software, I’m passionate about exploring emerging technologies and staying curious. I stay active through basketball and a dedicated fitness routine. In my free time, I also pursue DJing, a creative outlet that continues to challenge and inspire me.`,
   ],
 
-  aboutCredentialSkills: `Express, Sequelize, React, Redux, React-Redux, Angular, Node.js, Git, PostgreSQL, MongoDB, WordPress, Jasmine, Mocha/Chai, CSS, Jest.`,
-  aboutCredentialLanguages: `HTML, CSS, Javascript (ES5 & ES6), Python, Java.`,
+  aboutCredentialSkills: `Express, Sequelize, React, Redux, React-Redux, Angular, Node.js, Git, .NET, PostgreSQL, MongoDB, WordPress, Jasmine, Mocha/Chai, CSS, Jest.`,
+  aboutCredentialLanguages: `HTML, CSS, Javascript (ES5 & ES6), Python, Java, C#.`,
 };
