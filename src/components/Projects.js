@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { logEvent } from "../analytics";
+import LatestRepos from "./LatestRepos";
 
 function Projects({ projects, projects2 }) {
   // Sort the projects to display the live ones first
@@ -62,6 +63,12 @@ function Projects({ projects, projects2 }) {
           </div>
         ))}
       </div>
+
+      <h2 className="">Latest GitHub Work</h2>
+      <div className="projects_container">
+        <LatestRepos />
+      </div>
+      
     </div>
   );
 }

@@ -325,6 +325,51 @@ a {
   /* font-weight: bold; */
 }
 
+/* ---------- LatestRepos (added) ---------- */
+.repo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;          /* matches your dark theme */
+  height: 10rem;                /* same height as .image thumbs if you have one */
+  width: 20rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(233, 226, 226, 0.2),
+    0 6px 20px 0 rgba(201, 187, 187, 0.19);
+
+}
+
+.repo-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.repo-desc {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-top: 4px;
+}
+
+.language-usage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.lang-badge {
+  background-color: #222;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  color: #ddd;
+}
+
+/* ---------- end LatestRepos additions ----- */
+
+
 /* Contact */
 
 .contact_container {
