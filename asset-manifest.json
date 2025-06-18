@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Serge-Portfolio/static/css/main.f1ee0228.css",
-    "main.js": "/Serge-Portfolio/static/js/main.a99575b0.js",
+    "main.css": "/Serge-Portfolio/static/css/main.50248347.css",
+    "main.js": "/Serge-Portfolio/static/js/main.b01aa00e.js",
     "static/media/restauranfood.jpg": "/Serge-Portfolio/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/hero-jessica-felicio-unsplash.jpg": "/Serge-Portfolio/static/media/hero-jessica-felicio-unsplash.98577f48c0d6c31d24db.jpg",
     "static/media/Serge.png": "/Serge-Portfolio/static/media/Serge.00e3c33709e2b26798bf.png",
     "index.html": "/Serge-Portfolio/index.html",
-    "main.f1ee0228.css.map": "/Serge-Portfolio/static/css/main.f1ee0228.css.map",
-    "main.a99575b0.js.map": "/Serge-Portfolio/static/js/main.a99575b0.js.map"
+    "main.50248347.css.map": "/Serge-Portfolio/static/css/main.50248347.css.map",
+    "main.b01aa00e.js.map": "/Serge-Portfolio/static/js/main.b01aa00e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1ee0228.css",
-    "static/js/main.a99575b0.js"
+    "static/css/main.50248347.css",
+    "static/js/main.b01aa00e.js"
   ]
 }
