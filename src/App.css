@@ -268,6 +268,12 @@ a {
   margin-bottom: 0px;
   margin-top: 10px;
 }
+.work_container h2{
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
 .work_container .projects_container {
   margin-top: 10px;
   display: grid;
@@ -326,18 +332,32 @@ a {
 }
 
 /* ---------- LatestRepos (added) ---------- */
+.project-repo{
+  width: 20rem;
+  margin: 0px 14px;
+}
 .repo-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1e1e1e;          /* matches your dark theme */
-  height: 10rem;                /* same height as .image thumbs if you have one */
-  width: 20rem;
-  border-radius: 6px;
+  background: #1e1e1e;
+  height: 10rem;
+  width: 100%;
+  margin-left: 25px;
+  /* border-radius: 6px; */
   box-shadow: 0 4px 8px 0 rgba(233, 226, 226, 0.2),
     0 6px 20px 0 rgba(201, 187, 187, 0.19);
 
 }
+
+/* .repo-img-container{
+  height: 20rem;
+  width: 20rem;
+  margin-left: 25px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(233, 226, 226, 0.2),
+    0 6px 20px 0 rgba(201, 187, 187, 0.19);
+} */
 
 .repo-name {
   font-size: 1.2rem;
@@ -350,6 +370,7 @@ a {
   font-size: 0.9rem;
   color: #bbbbbb;
   margin-top: 4px;
+  margin-left: 25px;
 }
 
 .language-usage {
@@ -357,6 +378,7 @@ a {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 8px;
+  margin-left: 25px;
 }
 
 .lang-badge {
@@ -364,8 +386,21 @@ a {
   border-radius: 4px;
   padding: 2px 8px;
   font-size: 0.75rem;
-  color: #ddd;
+  /* color: #ddd; */
+  color: rgb(214, 137, 42);
 }
+
+.fallback-message {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.fallback-message.error {
+  color: #ff6b6b;
+}
+
 
 /* ---------- end LatestRepos additions ----- */
 
@@ -1042,9 +1077,9 @@ nav {
     margin-top: 10px;
   }
   .work_container h2 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 18px;
   }
   .work_container .projects_container {
     /* margin-top: 10px; */
@@ -1077,7 +1112,44 @@ nav {
     /* color:  rgb(214, 137, 42); */
     margin-left: 5px;
     padding-bottom: 20px;
+    text-align: left;
   }
+
+  .project-repo{
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .repo-card {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .repo-desc{
+    text-align: left;
+    margin-left: 0px;
+  }
+  /* .repo-desc {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-top: 4px;
+  } */
+
+  .language-usage {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 6px; */
+    margin-top: 4px;
+    margin-left: 0px;
+  }
+
+  /* .lang-badge {
+    background-color: #222;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    color: #ddd;
+  } */
 
   /* resume */
 

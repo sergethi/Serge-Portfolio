@@ -5,7 +5,7 @@ import LatestRepos from "./LatestRepos";
 
 function Projects({ projects, projects2 }) {
   // Sort the projects to display the live ones first
-  projects.sort((a, b) => b.isLive - a.isLive);
+  const sortedProjects = [...projects].sort((a, b) => b.isLive - a.isLive);
   // For analytics
   const handleProjectClick = (title) => {
     logEvent("Projects", "Click", title);
@@ -17,7 +17,7 @@ function Projects({ projects, projects2 }) {
       <h2>Express | Postgresql | React | Redux | WordPress</h2>
 
       <div className="projects_container">
-        {projects.map((project) => (
+        {sortedProjects.map((project) => (
           <div key={project.id} className="project">
             <div className="image">
               <a
@@ -29,15 +29,15 @@ function Projects({ projects, projects2 }) {
               >
                 <img src={project.imageSrc} alt={project.title} />
                 {project.isLive && (
-                  <p1 className="is-live">This site is live</p1>
+                  <p className="is-live">This site is live</p>
                 )}
               </a>
             </div>
             <div className="title">
               {project.title}
-              <a href={project.git} target="_blank" rel="noopener noreferrer">
+              <a href={project.git} aria-label={`View ${project.title} on GitHub`} target="_blank" rel="noopener noreferrer">
                 {" "}
-                <FaGithub></FaGithub>
+                <FaGithub />
               </a>
             </div>
           </div>
@@ -64,7 +64,7 @@ function Projects({ projects, projects2 }) {
         ))}
       </div>
 
-      <h2 className="">Latest GitHub Work</h2>
+      <h2 className="">Latest GitHub Repositories</h2>
       <div className="projects_container">
         <LatestRepos />
       </div>

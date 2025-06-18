@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import { logEvent } from "../analytics";
 
 const username = "sergethi";
 
 function LatestRepos() {
   const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     async function fetchRepos() {
@@ -22,11 +24,16 @@ function LatestRepos() {
             const langData = await langRes.json();
 
             // Calculate percentages
-            const total = Object.values(langData).reduce((sum, val) => sum + val, 0);
-            const langPercentages = Object.entries(langData).map(([lang, bytes]) => ({
-              lang,
-              percent: ((bytes / total) * 100).toFixed(1), // 1 decimal place
-            }));
+            const total = Object.values(langData).reduce(
+              (sum, val) => sum + val,
+              0
+            );
+            const langPercentages = Object.entries(langData).map(
+              ([lang, bytes]) => ({
+                lang,
+                percent: ((bytes / total) * 100).toFixed(1), // 1 decimal place
+              })
+            );
 
             return {
               ...repo,
@@ -36,8 +43,11 @@ function LatestRepos() {
         );
 
         setRepos(reposWithLangs);
-      } catch (error) {
-        console.error("Error fetching repos or languages", error);
+      } catch (err) {
+        console.error("Error fetching repos or languages", err);
+        setError("Failed to load GitHub repositories. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -51,22 +61,31 @@ function LatestRepos() {
   return (
     <>
       {/* <div className="projects_container"> */}
-        {repos.map((repo) => (
-          <div key={repo.id} className="project">
-            <div className="image repo-card">
-              <a
-                href={repo.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => handleRepoClick(repo.name)}
-                className="proj-img-flex"
-              >
+      {loading && (
+        <p className="fallback-message">⏳ Loading latest repositories...</p>
+      )}
+      {error && <p className="fallback-message error">{error}</p>}
+      {!loading && !error && repos.length === 0 && (
+        <p className="fallback-message">No repositories found.</p>
+      )}
+      {repos.map((repo) => (
+        <div key={repo.id} className="project project-repo">
+          <div className="image repo-card">
+            <a
+              href={repo.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => handleRepoClick(repo.name)}
+              className="proj-img-flex"
+            >
+              <div className="repo-img-container">
                 {/* <img src={repo.owner.avatar_url} alt={repo.name} /> */}
-                <span className="repo-name">{repo.name}</span>
-              </a>
-            </div>
+              </div>
+              <span className="repo-name">{repo.name}</span>
+            </a>
+          </div>
 
-            {/* <div className="title">
+          {/* <div className="title">
               {repo.language || "GitHub"}
               <a
                 href={repo.html_url}
@@ -77,21 +96,18 @@ function LatestRepos() {
               </a>
             </div> */}
 
-            {repo.description && (
-              <p className="repo-desc">{repo.description}</p>
-            )}
-
-            {repo.languages?.length > 0 && (
-              <div className="language-usage">
-                {repo.languages.map((lang) => (
-                  <span key={lang.lang} className="lang-badge">
-                    {lang.lang}: {lang.percent}%
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
+          {repo.languages?.length > 0 && (
+            <div className="language-usage">
+              {repo.languages.map((lang) => (
+                <span key={lang.lang} className="lang-badge">
+                  {lang.lang}: {lang.percent}%
+                </span>
+              ))}
+            </div>
+          )}
+          {repo.description && <p className="repo-desc">{repo.description}</p>}
+        </div>
+      ))}
       {/* </div> */}
     </>
   );
